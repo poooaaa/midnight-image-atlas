@@ -9,6 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        generate: "generate-button text-generate-foreground transition-[filter,transform] hover:brightness-105 active:brightness-95 active:translate-y-px motion-reduce:transition-none",
         default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
         destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:

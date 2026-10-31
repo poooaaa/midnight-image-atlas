@@ -62,6 +62,10 @@
 }
 
 :root {
+  --generate-start: oklch(0.77 0.09 247);
+  --generate-end: oklch(0.78 0.10 300);
+  --generate-foreground: oklch(0.21 0.03 275);
+  --generate-gradient: linear-gradient(110deg, var(--generate-start), var(--generate-end));
   --radius: 0.75rem;
   --background: #111113;
   --foreground: #ececee;
@@ -115,6 +119,7 @@
 
 @theme inline {
   --color-heading: var(--heading);
+  --color-generate-foreground: var(--generate-foreground);
   --color-card-border: var(--card-border);
   --color-bubble: var(--bubble);
   --color-bubble-hover: var(--bubble-hover);
@@ -151,3 +156,5 @@
   #root { background-color: var(--color-background); }
   ::placeholder { color: var(--color-placeholder); }
 }
+
+.generate-button { background-image: var(--generate-gradient); }
