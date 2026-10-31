@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Heart, ImageIcon, MoreHorizontal, Search } from "lucide-react";
+import { Heart, MoreHorizontal, Search } from "lucide-react";
 import { useState } from "react";
 
 export const Route = createFileRoute("/gallery")({
@@ -116,9 +116,6 @@ function Placeholder({ shape }: { shape: number }) {
           <circle cx="62" cy="58" r="18" fill="currentColor" opacity="0.6" />
         </>
       )}
-      <foreignObject x="0" y="0" width="0" height="0">
-        <ImageIcon />
-      </foreignObject>
     </svg>
   );
 }
